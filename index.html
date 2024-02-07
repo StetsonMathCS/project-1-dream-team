@@ -78,17 +78,56 @@
     <!-- Data Cleaning Method Section -->
     <div class="section">
         <div class="section-heading">Data Cleaning Method</div>
-        <p>Please select which base data file...</p>
+        <p>Please select which base data file you would like to use to create your customized data set.  There are two base data files to choose from: baseline and modal.  The baseline data file includes all eye movement data with no trimming.  The modal data file includes data trimming using the most common methods used to clean eye movement data: merging fixations that are shorter than 80ms with longer fixations within .50 degree of visual angle and deleting fixations that are shorter than 80ms or longer than 800ms.  The user might choose additional data cleaning methods such as removing outliers.  For more information about best practices for cleaning eye movement data, see Eskenazi (2023)
+        <a href = "https://link.springer.com/article/10.3758/s13428-023-02137-x" >here</a>.</p>
         <div class="radio-group">
             <label><input type="radio" name="datafile" value="baseline"> Baseline Data Cleaning File</label>
             <label><input type="radio" name="datafile" value="modal"> Modal Data Cleaning File</label>
         </div>
         <!-- Additional content can be added here -->
     </div>
+<!--Identifying Variables Section-->
+    <div class="section">
+        <div class="section-heading">Identifying Variables</div>
+        <p>These variables are used to build the basic structure of the data file such as Participant ID, Passage ID, and Word.  Participant ID and Passage ID should always automatically be checked by default.</p>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="identifying-variables" value="RECORDING_SESSION_LABEL"> 
+                Participant ID
+            <span class="tooltip" aria-label="Participant Identification number" tabindex="0">&#9215</span> </label>
+            <label>
+                <input type="checkbox" name="identifying-variables" value="page"> 
+                Passage ID  
+                <span class="tooltip" aria-label="The number corresponding to each of the 55 pages of text that participants read" tabindex="0">&#9215;</span>
+            </label>            
+            <label><input type="checkbox" name="identifying-variables" value="Unique ID"> 
+                Unique Word ID
+                <span class="tooltip" aria-label="Unique identification number for every word presented in the entire experiment" tabindex="0">&#9215</span>
+            </label>
+            <label><input type="checkbox" name="identifying-variables" value="Word_Cleaned">
+                 Word Cleaned
+                 <span class="tooltip" aria-label="The word that the participant read but with all punctuations removed such as periods or commas" tabindex="0">&#9215</span> </label>
+            <label><input type="checkbox" name="identifying-variables" value="TRIAL_INDEX"> 
+                Trial Order
+                <span class="tooltip" aria-label="Order in which each page was presented" tabindex="0">&#9215</span> </label>
+            
+            <label><input type="checkbox" name="identifying-variables" value="IA_ID">
+                 IA ID
+                 <span class="tooltip" aria-label="Identification number for each word within each page" tabindex="0">&#9215</span> </label>
+            
+            <label><input type="checkbox" name="identifying-variables" value="IA_LABEL"> 
+                Word
+                <span class="tooltip" aria-label="The word that the participant read" tabindex="0">&#9215</span> </label>
+            
+            <label><input type="checkbox" name="identifying-variables" value="text">
+                 Passage Text
+                 <span class="tooltip" aria-label="The first 100 characters of the entire page that the participant read" tabindex="0">&#9215</span> </label>
+            
 
+        </div>
     <!-- Eye Movement Data Section -->
     <div class="section">
-        <div class="section-heading">Eye Movement Data</div>
+        <h1>Eye Movement Data</h1>
+<p>In this section, you can select variables that were recorded during the eye-tracking portion of this study.</p>
         <div class="checkbox-group">
             <label><input type="checkbox" name="Eye Movement Data" value="trial-data"> Trial Data</label>
             <!-- Repeat for each type of eye movement data -->

@@ -85,5 +85,29 @@ body {
 .overlay-text {
     color: #0000008c; /* semi-transparent black for overlays or disabled elements */
 }
+.tooltip {
+    position: relative;
+}
+
+.tooltip::before {
+    content: attr(aria-label);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.tooltip:focus::before,
+.tooltip:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
 
 /* Utilize these classes in your HTML where appropriate */
