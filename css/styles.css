@@ -1,0 +1,89 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #222222; /* dark grey color for body text */
+    background-color: #ffffff; /* white background */
+    line-height: 1.6;
+}
+
+/* Header styles */
+.header {
+    background-color: #095540; /* dark green background */
+    color: #ffffff; /* white text */
+    padding: 10px 20px;
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #439539; /* green background */
+    color: #ffffff; /* white text */
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    padding: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff; /* white text */
+}
+
+/* Content styles */
+.main-content {
+    background-color: #efefef; /* light grey background for main content */
+}
+
+.main-content h1 {
+    color: #095540; /* dark green color for main headings */
+}
+
+.main-content h2 {
+    color: #439539; /* green color for secondary headings */
+}
+
+.main-content p {
+    color: #222222; /* dark grey color for paragraph text */
+}
+
+.link-text {
+    color: #0000ee; /* blue color for links */
+}
+
+.light-text {
+    color: #cccccc; /* light grey color for less important text */
+}
+
+.muted-text {
+    color: #6c757d; /* muted text color */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #eaeaea; /* slightly darker grey background for footer */
+    color: #555555; /* darker grey color for footer text */
+}
+
+/* Class for text that needs to stand out */
+.accent-text {
+    color: #439539; /* green color for accent text */
+}
+
+/* Overlays or semi-transparent text */
+.overlay-text {
+    color: #0000008c; /* semi-transparent black for overlays or disabled elements */
+}
+
+/* Utilize these classes in your HTML where appropriate */

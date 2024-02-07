@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SCIDEM</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 14px;
+        color: #222222; /* dark grey color for body text */
+        background-color: #ffffff; /* white background */
+    }
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        background: #efefef; /* light grey background */
+        border: 1px solid #ddd;
+        padding: 20px;
+    }
+    header {
+        background: #095540; /* dark green background */
+        color: #ffffff; /* white text */
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    header h1 {
+        margin: 0;
+    }
+    .section-heading {
+        font-weight: bold;
+        margin: 20px 0 10px;
+        color: #439539; /* green color for section headings */
+    }
+    .checkbox-group, .radio-group {
+        margin-bottom: 10px;
+    }
+    label {
+        margin-right: 20px;
+        display: block;
+        margin-top: 5px;
+        color: #6c757d; /* muted text color */
+    }
+    input[type="checkbox"], input[type="radio"] {
+        margin-right: 5px;
+    }
+    .submit-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #439539; /* green background */
+        color: #ffffff; /* white text */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    .submit-btn:hover {
+        background-color: #333; /* darker background on hover */
+    }
+</style>
+</head>
+<body>
+
+<header class="container">
+    <h1>Welcome to the SCIDEM</h1>
+    <p>Let's get started</p>
+</header>
+
+<div class="container">
+    <!-- Instructions Section -->
+    <div class="section">
+        <div class="section-heading">Instructions</div>
+        <p>Lorem ipsum dolor sit amet consectetur...</p>
+    </div>
+
+    <!-- Data Cleaning Method Section -->
+    <div class="section">
+        <div class="section-heading">Data Cleaning Method</div>
+        <p>Please select which base data file...</p>
+        <div class="radio-group">
+            <label><input type="radio" name="datafile" value="baseline"> Baseline Data Cleaning File</label>
+            <label><input type="radio" name="datafile" value="modal"> Modal Data Cleaning File</label>
+        </div>
+        <!-- Additional content can be added here -->
+    </div>
+
+    <!-- Eye Movement Data Section -->
+    <div class="section">
+        <div class="section-heading">Eye Movement Data</div>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="eye-data" value="trial-data"> Trial Data</label>
+            <!-- Repeat for each type of eye movement data -->
+        </div>
+    </div>
+
+    <!-- Lexical Variables Section -->
+    <div class="section">
+        <div class="section-heading">Lexical Variables</div>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="lexical-data" value="length"> Length</label>
+            <!-- Repeat for each type of lexical variable -->
+        </div>
+    </div>
+
+    <!-- Individual Differences Section -->
+    <div class="section">
+        <div class="section-heading">Individual Differences</div>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="individual-differences" value="vocabulary"> Vocabulary</label>
+            <!-- Repeat for each type of individual difference -->
+        </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="section">
+        <button class="submit-btn">Submit</button>
+    </div>
+</div>
+
+</body>
+</html>
