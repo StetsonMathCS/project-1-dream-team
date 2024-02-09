@@ -12,7 +12,16 @@
         color: #222222; /* dark grey color for body text */
         background-color: #ffffff; /* white background */
     }
+
     .container {
+        width: 80%;
+        margin: 20px auto;
+        background: #efefef; /* light grey background */
+        border: 1px solid #ddd;
+        padding: 20px;
+    }
+
+    .container-welcome {
         width: 80%;
         margin: 20px auto;
         background: #efefef; /* light grey background */
@@ -27,6 +36,9 @@
     }
     header h1 {
         margin: 0;
+    }
+    .welcome{
+        color: #095540;
     }
     .section-heading {
         font-weight: bold;
@@ -63,11 +75,13 @@
 
 <body>
 
-<header class="container">
-    <h1>Welcome to the SCIDEM</h1>
-    <p>Let's get started</p>
+<header class="container-top">
+    <h1>SCDIEM</h1>
+    <p>Stetson Corpus of Individual Differences and Eye Movement</p>
 </header>
-
+<div class="container-welcome">
+    <h1 class = "welcome">Welcome to the SCDIEM</h1>
+</div>
 <div class="container">
     <!-- Instructions Section -->
     <div class="section">
