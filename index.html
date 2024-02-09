@@ -85,13 +85,13 @@
 <div class="container">
     <!-- Instructions Section -->
     <div class="section">
-        <div class="section-heading">Instructions</div>
+        <div class="section-heading" style="text-align: center;">Instructions</div>
         <p>Lorem ipsum dolor sit amet consectetur...</p>
     </div>
 
     <!-- Data Cleaning Method Section -->
     <div class="section">
-        <div class="section-heading">Data Cleaning Method</div>
+        <div class="section-heading" style="text-align: center;">Data Cleaning Method</div>
         <p>Please select which base data file you would like to use to create your customized data set.  There are two base data files to choose from: baseline and modal.  The baseline data file includes all eye movement data with no trimming.  The modal data file includes data trimming using the most common methods used to clean eye movement data: merging fixations that are shorter than 80ms with longer fixations within .50 degree of visual angle and deleting fixations that are shorter than 80ms or longer than 800ms.  The user might choose additional data cleaning methods such as removing outliers.  For more information about best practices for cleaning eye movement data, see Eskenazi (2023)
         <a href = "https://link.springer.com/article/10.3758/s13428-023-02137-x" >here</a>.</p>
         <div class="radio-group">
@@ -102,7 +102,7 @@
     </div>
 <!--Identifying Variables Section-->
     <div class="section">
-        <div class="section-heading">Identifying Variables</div>
+        <div class="section-heading" style="text-align: center;">Identifying Variables</div>
         <p>These variables are used to build the basic structure of the data file such as Participant ID, Passage ID, and Word.  Participant ID and Passage ID should always automatically be checked by default.</p>
         <div class="checkbox-group">
             <label><input type="checkbox" name="identifying-variables" value="RECORDING_SESSION_LABEL"> 
@@ -140,13 +140,13 @@
         </div>
         <hr> <!-- Add a line to separate sections --> 
     <!-- Eye Movement Data Section -->
-    <div class="section">
+    <div class="section" style = "text-align: center;">
         <h1>Eye Movement Data</h1>
 <p>In this section, you can select variables that were recorded during the eye-tracking portion of this study.</p>
     </div>
 <!-- Trial Data-->
 <div class="section">
-    <div class="section-heading"> Trial Data</div>
+    <div class="section-heading" style="text-align: center;"> Trial Data</div>
     <p> This section includes data about the entire trial, not individual interest areas. </p>
     <div class="checkbox-group">
         <select name="fruits">
