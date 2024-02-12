@@ -184,7 +184,7 @@ body {
     
     [type="checkbox"] {
       position: relative;
-      top: -1px;
+      top: 2px;
       margin-right: 4px;
     }
   }
