@@ -150,8 +150,7 @@
     <p> This section includes data about the entire trial, not individual interest areas. </p>
     <div class="section">
 
-        <h1>Dropdown Checkboxes</h1>
-
+        <label for="metrics">Trial Data:</label>
         <div class="dropdown" data-control="checkbox-dropdown">
           <label class="dropdown-label">Select</label>
           
@@ -161,29 +160,36 @@
             </a>
             
             <label class="dropdown-option">
-              <input type="checkbox" name="dropdown-group" value="Selection 1" />
-              Selection One
+              <input type="checkbox" name="dropdown-group" value="eye_used" />
+              Eye tracked
+              <span class="tooltip" aria-label="The number corresponding to each of the 55 pages of text that participants read" tabindex="0">&#9215;</span>
             </label>
             
             <label class="dropdown-option">
-              <input type="checkbox" name="dropdown-group" value="Selection 2" />
-              Selection Two
+              <input type="checkbox" name="dropdown-group" value="trial_dwell_time" />
+              Total Trial Time
+              <span class="tooltip" aria-label="The number corresponding to each of the 55 pages of text that participants read" tabindex="0">&#9215;</span>
             </label>
             
             <label class="dropdown-option">
-              <input type="checkbox" name="dropdown-group" value="Selection 3" />
-              Selection Three
+              <input type="checkbox" name="dropdown-group" value="trial_fixation_count" />
+              Total Trial Fixation Count
             </label>
             
             <label class="dropdown-option">
-              <input type="checkbox" name="dropdown-group" value="Selection 4" />
-              Selection Four
+              <input type="checkbox" name="dropdown-group" value="trial_ia_count" />
+              Total Trial IAS
             </label>
             
             <label class="dropdown-option">
-              <input type="checkbox" name="dropdown-group" value="Selection 5" />
-              Selection Five
-            </label>      
+              <input type="checkbox" name="dropdown-group" value="trial_total_visited_ia_count" />
+              Total Trial IAs Visited
+            </label> 
+
+            <label class="dropdown-option">
+                <input type="checkbox" name="dropdown-group" value="ia_visited_percentage" />
+                Percent of IAs Visited %
+              </label>        
           </div>
         </div>
     <div class="checkbox-group">

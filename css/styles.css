@@ -93,6 +93,8 @@ body {
 }
 .tooltip {
     position: relative;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .tooltip::before {
@@ -116,10 +118,13 @@ body {
     visibility: visible;
 }
 
+
+
 .dropdown {
     position: relative;
     font-size: 14px;
     color: #333;
+    width: 50%;
   
     .dropdown-list {
       padding: 12px;
