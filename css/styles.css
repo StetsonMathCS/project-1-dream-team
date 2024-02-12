@@ -125,27 +125,30 @@ body {
     font-size: 14px;
     color: #333;
     width: 50%;
+    
   
     .dropdown-list {
-      padding: 12px;
-      background: #fff;
-      position: absolute;
-      top: 30px;
-      left: 2px;
-      right: 2px;
-      box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .15);
-      transform-origin: 50% 0;
-      transform: scale(1, 0);
-      transition: transform .15s ease-in-out .15s;
-      max-height: 66vh;
-      overflow-y: scroll;
+        padding: 12px;
+        background: #fff;
+        position: absolute;
+        top: 30px;
+        left: 2px;
+        right: 2px;
+        box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .15);
+        transform-origin: 50% 0;
+        transform: scale(1, 0);
+        transition: transform .15s ease-in-out .15s;
+        max-height: 66vh;
+        overflow-y: scroll;
+        z-index: 1; /* Add z-index property to prevent overlapping */
     }
-    
+
+
     .dropdown-option {
-      display: block;
-      padding: 8px 12px;
-      opacity: 0;
-      transition: opacity .15s ease-in-out;
+        display: block;
+        padding: 8px 12px;
+        opacity: 0;
+        transition: opacity .15s ease-in-out;
     }
     
     .dropdown-label {
