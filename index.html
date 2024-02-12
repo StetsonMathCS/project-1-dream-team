@@ -150,19 +150,42 @@
     <p> This section includes data about the entire trial, not individual interest areas. </p>
     <div class="section">
 
-        <div class="checkbox-group">
-        <label for="metrics">Trial Data:</label>
-        <select id="metrics">
-            <option value="eye_used">Eye Tracked</option>
-            <option value="trial_dwell_time"> Total Trial Time</option>
-            <option value="trial_fixation_count">Total Trial Fixation Count</option>
-            <option value="trial_ia_count">Total Trial IAS</option>
-            <option value="trial_total_visited_ia_count"> Total Trial IAs Visited</option>
-            <option value="ia_visited_percentage">Percent of IAs Visited %</option>
-        </select>
-        
-        <!-- Repeat for each type of eye movement data -->
-    </div>
+        <h1>Dropdown Checkboxes</h1>
+
+        <div class="dropdown" data-control="checkbox-dropdown">
+          <label class="dropdown-label">Select</label>
+          
+          <div class="dropdown-list">
+            <a href="#" data-toggle="check-all" class="dropdown-option">
+              Check All  
+            </a>
+            
+            <label class="dropdown-option">
+              <input type="checkbox" name="dropdown-group" value="Selection 1" />
+              Selection One
+            </label>
+            
+            <label class="dropdown-option">
+              <input type="checkbox" name="dropdown-group" value="Selection 2" />
+              Selection Two
+            </label>
+            
+            <label class="dropdown-option">
+              <input type="checkbox" name="dropdown-group" value="Selection 3" />
+              Selection Three
+            </label>
+            
+            <label class="dropdown-option">
+              <input type="checkbox" name="dropdown-group" value="Selection 4" />
+              Selection Four
+            </label>
+            
+            <label class="dropdown-option">
+              <input type="checkbox" name="dropdown-group" value="Selection 5" />
+              Selection Five
+            </label>      
+          </div>
+        </div>
     <div class="checkbox-group">
         <label for="metrics">Eye Movement Data:</label>
         <select id="metrics">
@@ -897,6 +920,10 @@
         <button class="submit-btn">Submit</button>
     </div>
 </div>
+
+<!-- Include jQuery from a CDN, place this before your custom script inclusion -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/dropdown.js"></script>
 
 </body>
 </html>
